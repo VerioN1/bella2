@@ -1,17 +1,20 @@
 import { extendTheme } from "@chakra-ui/react";
 
 const colors = {
-  primary: {
-    100: "#E5FCF1",
-    200: "#27EF96",
-    300: "#10DE82",
-    400: "#0EBE6F",
-    500: "#0CA25F",
-    600: "#0A864F",
-    700: "#086F42",
-    800: "#075C37",
-    900: "#064C2E"
-  }
+  primary:
+ 
+{
+  50: '#ffe5ec',
+  100: '#fcb8c6',
+  200: '#f48b9d',
+  300: '#ee5e71',
+  400: '#e83243',
+  500: '#ce1823',
+  600: '#a11116',
+  700: '#740a16',
+  800: '#470410',
+  900: '#1e0006',
+}
 };
 
 const customTheme = extendTheme({ colors });
