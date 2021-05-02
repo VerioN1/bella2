@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Box, Flex, Text, Button, Input } from "@chakra-ui/react";
-import Logo from "../ui/Logo";
 
 const MenuItem = ({ children, isLast, to = "/", ...rest }) => {
   return (
@@ -37,7 +36,7 @@ const MenuIcon = () => (
   </svg>
 );
 
-const Header = (props) => {
+const NavBar = (props) => {
   const [show, setShow] = React.useState(false);
   const toggleMenu = () => setShow(!show);
 
@@ -54,17 +53,12 @@ const Header = (props) => {
       color={["white", "white", "primary.200", "primary.200"]}
       {...props}
     >
-      <Flex align="center">
-        <Logo
-          w="100px"
-          color={["white", "white", "primary.400", "primary.400"]}
-        />
-      </Flex>
-
       <Box display={{ base: "block", md: "none" }} onClick={toggleMenu}>
         {show ? <CloseIcon /> : <MenuIcon />}
       </Box>
-
+      <Box>
+        <Text fontSize="30px">Bella ciao</Text>
+      </Box>
       <Box
         display={{ base: show ? "block" : "none", md: "block" }}
         flexBasis={{ base: "100%", md: "auto" }}
@@ -105,4 +99,4 @@ const Header = (props) => {
   );
 };
 
-export default Header;
+export default NavBar;

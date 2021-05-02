@@ -1,14 +1,15 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Landing from "./pages/Home/Landing";
+import HomePage from "./pages/Home/HomePage";
 import './styles.css'
+
 export default function App() {
   return (
     <Router>
       <Switch>
         <Route path="/">
-          <Landing>
-            </Landing>
+          <HomePage>
+            </HomePage>
         </Route>
       </Switch>
     </Router>
